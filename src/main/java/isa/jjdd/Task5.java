@@ -17,9 +17,9 @@ public class Task5 {
 		}
 
 		if (longestWord("Dzisiaj pracowaliśmy nad Projekt1029384983.") == 17) {
-			STDOUT.info("1 - OK");
+			STDOUT.info("2 - OK");
 		} else {
-			STDOUT.info("1 - Wrong");
+			STDOUT.info("2 - Wrong");
 		}
 	}
 
