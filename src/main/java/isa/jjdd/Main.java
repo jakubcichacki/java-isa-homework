@@ -9,7 +9,7 @@ public class Main {
 
 	public static void main(String[] args) throws InterruptedException {
 		STDOUT.info("Start system\n");
-		Task4 task = new Task4();
+		Task7 task = new Task7();
 		task.run();
 	}
 
