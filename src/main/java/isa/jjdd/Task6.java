@@ -27,6 +27,23 @@ public class Task6 {
 		//Mamy dwa wyrazy. Należy sprawdzić, czy można przestawić
 		// litery w pierwszym wyrazie tak, żeby powstał drugi wyraz.
 		// Niepotrzebne litery można odrzucić.
-		return false;
+		boolean scramble = true;
+		String[] arraySentence1 = sentence1.toLowerCase().split("");
+		String[] arraySentence2 = sentence2.toLowerCase().split("");
+
+		for (String el : arraySentence2) {
+			for (int i = 0; i < arraySentence1.length; i++) {
+				if (el.equals(arraySentence1[i])) {
+					arraySentence1[i] = null;
+					el = null;
+					break;
+				}
+			}
+			if (el != null) {
+				scramble = false;
+				break;
+			}
+		}
+		return scramble;
 	}
 }
